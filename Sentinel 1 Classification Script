@@ -1,5 +1,5 @@
 // Import boundaries from asset
-// The AOI is District Lakki Marwat Which Boundary is Uploaded to Asset Of GEE
+// The AOI is District Lakki Marwat Which Boundary is Uploaded to the Asset Of GEE
 var AOI = ee.FeatureCollection('users/maliktashfeenikhan0335/LAKKI_BD');
 
 // Set map center to the AOI to make sure we have the correct study area
