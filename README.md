@@ -1,8 +1,29 @@
 # Sentinel-1 Land Cover Classification with Google Earth Engine
 
-This repository contains a script to classify land cover types in the Lakki Marwat region using Sentinel-1 SAR imagery and a Random Forest classifier in Google Earth Engine (GEE).
+Dear Alam Sher Sir,
 
-## Description
+I am writing to inform you that I have uploaded two scripts for the land cover classification of the Lakki Marwat district using Google Earth Engine (GEE). Below are the details of the two scripts:
+
+# Script with Shapefile from GEE Asset:
+
+This script utilizes a shapefile of the Lakki Marwat boundary, which has been uploaded to the GEE asset.
+The script imports this shapefile to define the Area of Interest (AOI) and proceeds with the Sentinel-1 image processing and land cover classification.
+The shapefile provides precise boundary details, ensuring accurate analysis within the defined AOI.
+
+# Script with Coordinates to Cover Entire District:
+
+This script defines the AOI using a bounding box with coordinates, covering the entire Lakki Marwat district.
+The coordinates have been adjusted to ensure the whole district is included in the analysis.
+This approach eliminates the need for a shapefile and allows for direct execution using specified coordinates.
+Both scripts perform similar image processing and land cover classification tasks using Sentinel-1 data and a Random Forest classifier. The main difference lies in how the AOI is defined—either through a shapefile or coordinates.
+
+Please review the scripts and let me know if there are any adjustments or further actions required.
+Thank you for your guidance and support.
+
+Best regards,
+
+Muhammad Tashfeen 
+Roll No 22
 
 The script performs the following steps:
 
@@ -17,25 +38,3 @@ The script performs the following steps:
 9. **Classify Image**: The composite image is classified into the defined land cover classes.
 10. **Evaluate Classifier**: The classifier's accuracy is evaluated using a confusion matrix.
 11. **Export Classified Image**: The classified image is exported to Google Drive.
-
-## Usage
-
-1. **Setup Google Earth Engine**: Ensure you have a Google Earth Engine account and the necessary permissions to access the required assets.
-
-2. **Import the Script**: Copy the script into the GEE code editor or use the provided link to access it directly:
-   [GEE Script](https://code.earthengine.google.com/?scriptPath=users%2Fbehzadsk12%2Fbehzad_sk%3ASentinel_1_Classification)
-
-3. **Run the Script**: Execute the script in the GEE code editor.
-
-4. **Modify Sample Points**: Adjust the sample points for land cover classes to better match your ground truth data if necessary.
-
-5. **Export Results**: The classified image will be exported to your Google Drive.
-
-## Notes
-
-- Adjust the sample points for the land cover classes to match your specific study area and ground truth data.
-- Ensure you have the necessary permissions to access the GEE assets and to export images to your Google Drive.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
