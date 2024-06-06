@@ -25,7 +25,7 @@ Best regards,
 Muhammad Tashfeen 
 Roll No 22
 
-The script performs the following steps:
+# The script performs the following steps:
 
 1. **Load the Area of Interest (AOI)**: The AOI is imported from an existing GEE asset.
 2. **Filter Sentinel-1 Data**: Sentinel-1 SAR imagery is filtered for the AOI and a specified date range. Both ascending and descending orbit data are used.
