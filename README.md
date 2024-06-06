@@ -4,13 +4,13 @@ Dear Alam Sher Sir,
 
 I am writing to inform you that I have uploaded two scripts for the land cover classification of the Lakki Marwat district using Google Earth Engine (GEE). Below are the details of the two scripts:
 
-# Script with Shapefile from GEE Asset:
+Script with Shapefile from GEE Asset:
 
 This script utilizes a shapefile of the Lakki Marwat boundary, which has been uploaded to the GEE asset.
 The script imports this shapefile to define the Area of Interest (AOI) and proceeds with the Sentinel-1 image processing and land cover classification.
 The shapefile provides precise boundary details, ensuring accurate analysis within the defined AOI.
 
-# Script with Coordinates to Cover Entire District:
+Script with Coordinates to Cover Entire District:
 
 This script defines the AOI using a bounding box with coordinates, covering the entire Lakki Marwat district.
 The coordinates have been adjusted to ensure the whole district is included in the analysis.
