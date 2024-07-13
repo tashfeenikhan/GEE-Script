@@ -1,0 +1,22 @@
+var dataset = ee.ImageCollection('NOAA/VIIRS/DNB/ANNUAL_V22')
+                  
+                  .select('maximum')
+                  .map(function(img){
+                    return img.set('year', ee.Date(img.get('system:time_start')).get('year'));
+                  });
+
+// 2. Select the year              
+var years = [2012, 2015, 2020, 2022];
+for(var a = 0; a < 4; a++){
+  var filter = dataset.filterMetadata('year', 'equals', years[a]);
+  
+// 3. Set visualization parameters  
+  var style = {
+    bands: ['maximum'],
+    max: 63,
+    palette: ['black', 'white', 'orange', 'yellow', 'red']
+  };
+  
+  Map.addLayer(filter.mean(), style, 'Nighttime - YEAR: ' + years[a]);
+}
+
